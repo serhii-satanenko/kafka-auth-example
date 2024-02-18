@@ -20,9 +20,8 @@ def send_message():
   data = request.get_json()
   
   try:
-    # Відправляємо повідомлення та чекаємо на результат
     future = producer.send(topic_name, value=data)
-    result = future.get(timeout=10)  # Чекаємо на завершення до 10 секунд
+    result = future.get(timeout=10) 
     print(f"Message sent: {result}")
     return jsonify({'status': 'success', 'data': data}), 200
   except Exception as e:

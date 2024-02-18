@@ -27,9 +27,9 @@ def start_kafka_consumer():
             for message in consumer:
                 print(f"LOG_message: {message.value}")
                 socketio.emit('kafka_message', message.value)
-        except Exception as e:  # Використання загального винятку для перехоплення помилок
+        except Exception as e:
             print(f"Error in consumer: {e}")
-            break  # Вийдіть з циклу або вживайте інші заходи для відновлення
+            break
 
 @app.route('/')
 def index():
