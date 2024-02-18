@@ -12,6 +12,9 @@ python3 producer/producer-auth.py
 python3 tester.py
 
 
-kafka-ui localhost:8080
-zoonavigator localhost:9000
-endpoints ['localhost:9092', 'localhost:9093', 'localhost:9094']
+# NOTE:
+  kafka-ui localhost:8080
+  
+  zoonavigator localhost:9000
+  
+  endpoints ['localhost:9092', 'localhost:9093', 'localhost:9094']
