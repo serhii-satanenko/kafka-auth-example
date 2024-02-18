@@ -1,5 +1,7 @@
-cd kafka-cluster-auth
-docker-compose -f my-kafka-m-zoo-sing-authorization.yml up -d 
+# docker run
+cd kafka-cluster-auth 
+
+docker compose -f my-kafka-m-zoo-sing-authorization.yml up -d 
 
 # first run 
 
