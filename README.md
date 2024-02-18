@@ -1,4 +1,5 @@
-docker-compose -f kafka-cluster-auth/my-kafka-m-zoo-sing-authorization.yml up -d 
+cd kafka-cluster-auth
+docker-compose -f my-kafka-m-zoo-sing-authorization.yml up -d 
 
 
 kafka-ui localhost:8080
