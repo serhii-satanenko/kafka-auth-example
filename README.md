@@ -20,3 +20,9 @@ python3 tester.py
   zoonavigator localhost:9000
   
   endpoints ['localhost:9092', 'localhost:9093', 'localhost:9094']
+
+# SEND massege
+
+http://127.0.0.1:5000/send
+
++ any json in body
